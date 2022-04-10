@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -17,6 +18,7 @@ import lombok.Setter;
 @Getter
 @EqualsAndHashCode(of = { "id" })
 @Entity
+@Table(name = "persons")
 public class Person {
 	@Id
 	int id;
@@ -24,7 +26,7 @@ public class Person {
 	String name;
 	LocalDate birthDate;
 	@Setter
-	@Embedded
+//	@Embedded
 	Address address;
 
 }

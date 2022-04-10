@@ -1,5 +1,7 @@
 package telran.java41.person.model;
 
+import javax.persistence.Embeddable;
+
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -11,6 +13,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode
+@Embeddable
 public class Address {
 
 	String city;
